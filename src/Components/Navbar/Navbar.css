@@ -1,0 +1,121 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+/* Logo section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 35px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: blue; /* Blue color for 'Green' part */
+}
+
+.logo-text span:first-child {
+  color: red; /* Red color for 'Go' part */
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #4caf50; /* Green hover effect */
+  transform: scale(1.1); /* Zoom effect */
+}
+
+/* Icons section */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between icons */
+}
+
+.navbar-icons a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar-icons a:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
+
+.icon {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+.icon-heart:hover {
+  color: red; /* Red color when heart icon is hovered */
+}
+
+/* Specific icons */
+.icon-search::before { content: '\f002'; } /* Unicode for search icon */
+.icon-heart::before { content: '\f004'; } /* Unicode for heart icon */
+.icon-cart::before { content: '\f07a'; } /* Unicode for cart icon */
+.icon-user::before { content: '\f007'; } /* Unicode for user icon */
+
+/* Search input styles */
+.search-input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar-icons {
+    gap: 10px;
+  }
+}
